@@ -6,7 +6,7 @@ namespace Builder
     {
         protected Pizza Pizza { get; set; }
 
-        public abstract void GetPizza();
+        public abstract string GetPizza();
         public abstract void AddCheese();
         public abstract void AddHam();
         public abstract void Bake();

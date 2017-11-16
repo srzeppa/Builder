@@ -6,10 +6,7 @@ namespace FluentBuilder
     {
         protected Pizza pizza;
 
-        Pizza Pizza
-        {
-            get { return pizza;}
-        }
+        private Pizza Pizza => pizza;
 
         public abstract PizzaBuilder SetName(string name);
         public abstract PizzaBuilder AddCheese();

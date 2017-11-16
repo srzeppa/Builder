@@ -1,5 +1,4 @@
 ﻿using Builder.Models;
-using System;
 
 namespace Builder
 {
@@ -25,9 +24,9 @@ namespace Builder
             Pizza.Baked = true;
         }
 
-        public override void GetPizza()
+        public override string GetPizza()
         {
-            Console.WriteLine($"{Pizza.Name} cheese: {Pizza.Cheese} ham: {Pizza.Ham}");
+            return $"{Pizza.Name} cheese: {Pizza.Cheese} ham: {Pizza.Ham}";
         }
 
         public override void SetName()
